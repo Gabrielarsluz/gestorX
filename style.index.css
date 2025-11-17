@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ebe4e4;
+}
+
+header {
+    width: 100%;
+    background-color: rgba(44, 44, 106, 0.85);
+    color: white;
+    display: flex;
+    justify-content: center;
+    /* título central */
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Logo e título à esquerda */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-self: start;
+}
+
+.logo img {
+    height: 40px;
+    width: 40px;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ffd700;
+    /* destaque dourado no “X” */
+}
+
+/* Centralizar o título opcional (caso queira no meio da navbar) */
+header h1 {
+    justify-self: center;
+    margin: 0;
+}
+
+/* Botão de saída à direita */
+nav {
+    justify-self: end;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Espaçamento do conteúdo principal para não ficar escondido atrás do header */
+main {
+    padding-top: 100px;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+}
+
+.logo span {
+    color: #e7dfdf;
+}
+
+.icon {
+    width: 50px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #1efc7d;
+}
+
+main {
+    margin-top: 130px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.painel {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    width: 80%;
+    max-width: 1200px;
+}
+
+.painel h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.painel p {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    color: #eaeaea;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.card-opcao {
+    background-color: #d9d9d9;
+    color: #2c2c6a;
+    text-decoration: none;
+    width: 240px;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.card-opcao img {
+    width: 70px;
+    margin-bottom: 15px;
+}
+
+.card-opcao h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.card-opcao p {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.card-opcao:hover {
+    background-color: #1efc7d;
+    color: #2c2c6a;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    width: 100%;
+    background-color: rgba(44, 44, 106, 0.85);
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.3);
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    border-radius: 5px 15px 1 1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-content p {
+    font-size: 1rem;
+}
+
+.social {
+    display: flex;
+    gap: 15px;
+}
+
+.social a {
+    color: #1efc7d;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: white;
+    text-decoration: underline;
+}
